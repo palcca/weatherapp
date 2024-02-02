@@ -1,5 +1,5 @@
 document.querySelector("#searchBtn").addEventListener("click", ()=>{
-    weather((document.querySelector("#cityInput").value)) 
+    weather((document.querySelector("#cityInput").value)).catch(err => alert("Add meg a várost")) 
 });
 
 async function weather(city){
@@ -12,4 +12,5 @@ async function weather(city){
   document.querySelector("#humidity").textContent = "Relatív páratartalom: "+ Data.data[0].rh + "%";
   document.querySelector("#weather").style.borderColor="black";
   document.querySelector("#temp").style.borderColor="black";
+  
 };

@@ -1,65 +1,69 @@
-*{ 
-    font-family: sans-serif;
-    box-sizing: border-box;
-    font-size: 1.3rem;
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  font-size: 1.3rem;
 }
 
-html{
-    padding: 0.5rem;
-    display: flex;
-    background-color: skyblue;
-    justify-content: flex-start;
+html {
+  padding: 0.5rem;
+  display: flex;
+  background-color: skyblue;
+  justify-content: flex-start;
 }
 
-body{   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+button {
+  margin-left: 0.5rem;
+  width: 5rem;
+}
+#weather {
+  align-self: flex-start;
 
-}
-button{
-    margin-left: 0.5rem;
-    width: 5rem;
-    
-}
-#weather{
-    align-self: flex-start;
-    padding-bottom: 1.5rem;
-    border-left: 3px solid rgba(0, 0, 0, 0);
-    margin: 1rem;
-    
+  border-left: 3px solid rgba(0, 0, 0, 0);
+  margin: 1rem;
 }
 
- #weather > div{
-    color:rgb(67, 67, 67);
-    font-size:0.8rem;
-
-    font-style: italic;
-    padding-left: 2rem;
-    padding-top: 0.6rem;
+#weather > div {
+  color: rgb(67, 67, 67);
+  font-size: 0.8rem;
+  font-style: italic;
+  padding-bottom: 0.6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-#weather #location{
-    color: black;
-    padding-left: 1rem;
-    font-size: 1.5rem;
-    font-weight: 900;
+#weather #location {
+  color: black;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
-#weather #temp{
-    color: black;
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
-    font-size:1.2rem;
-    padding-left:1.5rem;
-    padding-bottom: 0.7rem;
-    margin-bottom: 1rem;
+#weather #temp {
+  color: black;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  font-size: 1.2rem;
+  padding-left: 1.5rem;
+  padding-bottom: 0.7rem;
 }
 
-h3{
-    margin-top: 0.2rem;
-    padding:0;
+h3 {
+  margin-top: 0.2rem;
+  padding: 0;
 }
-span{
-    padding: 0;
-    margin: 0;
+span {
+  padding: 0;
+  margin: 0;
+}
+
+#weatherDescription {
+  padding-top: 1rem;
+}
+
+#weather #humidity {
+  padding-bottom: 1rem;
 }
